@@ -1,4 +1,3 @@
-import 'package:bookly/features/home/presentation/views/widgets/home_view_body.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../constents.dart';
@@ -35,6 +34,7 @@ class BestSellerListViewItem extends StatelessWidget {
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SizedBox(
                   width: MediaQuery.of(context).size.width * .5,
