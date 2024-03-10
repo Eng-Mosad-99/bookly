@@ -1,5 +1,6 @@
 // ignore_for_file: unused_element
 
+import 'package:bookly/features/home/presentation/views/book_details_view.dart';
 import 'package:bookly/features/home/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -19,6 +20,12 @@ abstract class AppRouter {
         path: '/homeView',
         builder: (BuildContext context, GoRouterState state) {
           return const HomeView();
+        },
+      ),
+      GoRoute(
+        path: '/detailView',
+        builder: (BuildContext context, GoRouterState state) {
+          return const BookDetailView();
         },
       ),
     ],
