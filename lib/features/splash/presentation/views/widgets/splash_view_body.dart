@@ -1,8 +1,6 @@
-import 'package:bookly/constents.dart';
-import 'package:bookly/features/home/presentation/views/home_view.dart';
 import 'package:bookly/features/splash/presentation/views/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 import '../../../../../core/utils/assets.dart';
 
 class SlpashViewBody extends StatefulWidget {
@@ -64,12 +62,17 @@ class _SlpashViewBodyState extends State<SlpashViewBody>
   }
 
   void navigateToHome() {
-    Future.delayed(const Duration(seconds: 3), () {
-      Get.to(
-        () => const HomeView(),
-        transition: Transition.fade,
-        duration: kTransitionDuration,
-      );
-    });
+    Future.delayed(
+      const Duration(seconds: 3),
+      () {
+        // Get.to(
+        //   () => const HomeView(),
+        //   transition: Transition.fade,
+        //   duration: kTransitionDuration,
+        // );
+
+        GoRouter.of(context).push('/homeView');
+      },
+    );
   }
 }
