@@ -65,12 +65,6 @@ class _SlpashViewBodyState extends State<SlpashViewBody>
     Future.delayed(
       const Duration(seconds: 3),
       () {
-        // Get.to(
-        //   () => const HomeView(),
-        //   transition: Transition.fade,
-        //   duration: kTransitionDuration,
-        // );
-
         GoRouter.of(context).push('/homeView');
       },
     );
