@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../../../home/presentation/views/widgets/best_seller_list_view_item.dart';
 
 class SearchResultListView extends StatelessWidget {
   const SearchResultListView({super.key});
@@ -9,7 +8,8 @@ class SearchResultListView extends StatelessWidget {
     return ListView.separated(
       padding: EdgeInsets.zero,
       itemBuilder: (context, index) {
-        return const BookListViewItem();
+        // return const BookListViewItem(bookModel: ,);
+        return const Text('data');
       },
       separatorBuilder: (context, index) => const SizedBox(
         height: 18,
