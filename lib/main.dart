@@ -1,4 +1,3 @@
-import 'package:bookly/core/utils/api_service.dart';
 import 'package:bookly/core/utils/app_router.dart';
 import 'package:bookly/core/utils/service_locator.dart';
 import 'package:bookly/features/home/data/repos/home_repo_impl.dart';
