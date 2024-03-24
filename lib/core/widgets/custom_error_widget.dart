@@ -13,6 +13,7 @@ class CustomErrorMessage extends StatelessWidget {
     return Center(
       child: Text(
         errorMessage,
+        textAlign: TextAlign.center,
         style: Styles.textStyle18,
       ),
     );

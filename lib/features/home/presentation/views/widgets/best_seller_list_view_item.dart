@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../../../constents.dart';
+import '../../../../../core/utils/assets.dart';
 import '../../../../../core/utils/styles.dart';
 import 'book_rating.dart';
 
@@ -24,7 +25,8 @@ class BookListViewItem extends StatelessWidget {
         child: Row(
           children: [
             CustomBookImage(
-              imageUrl: bookModel.volumeInfo.imageLinks.thumbnail,
+              imageUrl: bookModel.volumeInfo.imageLinks?.thumbnail ??
+                  AssetsData.testImage,
             ),
             const SizedBox(
               width: 30,
