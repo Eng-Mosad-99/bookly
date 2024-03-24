@@ -51,14 +51,10 @@ class HomeRepoImplementation implements HomeRepo {
       return right(books);
     } catch (e) {
       if (e is DioException) {
-        return left(
-          ServerFailure.fromDioException(e),
-        );
+        return left(ServerFailure.fromDioException(e));
       }
       return left(
-        ServerFailure(
-          e.toString(),
-        ),
+        ServerFailure(e.toString()),
       );
     }
   }
