@@ -19,7 +19,6 @@ class _SlpashViewBodyState extends State<SlpashViewBody>
   void initState() {
     super.initState();
     initSlidingAnimation();
-
     navigateToHome();
   }
 
